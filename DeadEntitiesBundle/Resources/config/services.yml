@@ -1,0 +1,4 @@
+services:
+#    mlb_dead_entities.example:
+#        class: Mlb\DeadEntitiesBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
