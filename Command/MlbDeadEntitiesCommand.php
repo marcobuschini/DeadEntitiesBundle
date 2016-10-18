@@ -128,7 +128,7 @@ EOT
               .$this->with($entity)
               .$this->where($entity);
         
-        $entityManager = $this->getHelper('em')->getEntityManager();
+        $entityManager = $this->getContainer()->get('doctrine')->getManager();;
         try {
             $query = $entityManager->createQuery($dql);
             $ret = $query->getResult();
